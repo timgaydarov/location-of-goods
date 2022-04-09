@@ -5,15 +5,12 @@ export default function IconSwitch(props) {
 
 	return (
 		<div className='icon'>
-			{props.icon.map((i, k) =>
-			(<button
+			<button
 				className='material-icons'
-				key={k}
-				onClick={() => props.onSwitch(i)}
+				onClick={() => props.onSwitch()}
 			>
-				{i.name}
-			</button>)
-			)}
+				{props.icon}
+			</button>
 		</div>
 	)
 

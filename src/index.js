@@ -10,10 +10,6 @@ import './css/CardsView.css'
 import App from './App';
 
 
-const icons = [
-	{ name: 'view_list', key: 1 },
-	{ name: 'view_module', key: 2 }
-]
 
 const products = [{
 	name: "Nike Metcon 2",
@@ -49,7 +45,7 @@ const products = [{
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App icons={icons} products={products} />
+		<App products={products} />
 	</React.StrictMode>,
 	document.getElementById('root')
 );

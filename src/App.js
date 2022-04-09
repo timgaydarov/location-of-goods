@@ -5,7 +5,7 @@ import Store from './components/Store';
 
 function App(props) {
 	return (
-		<Store icons={props.icons} products={props.products} />
+		<Store products={props.products} />
 	);
 }
 
